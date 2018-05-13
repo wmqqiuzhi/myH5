@@ -12,21 +12,48 @@
       }
       @keyframes myfirst
       {
-          from {background:red;}
-          to {background:yellow;}
+        %0{opacity:0}
+        %25{opacity:100}
+        %50{opacity:0}
+        %100{opacity:0}
        }
-      h1{
-          animation:myfirst 5s;
+      @keyframes mysecond
+      {
+        %0{opacity:0}
+        %50{opacity:0}
+        %75{opacity:100}
+        %100{opacity:0}
+       }
+      p{
+          font-size：100px
+          position:absolute;
+          width: 100%;
+          text-align:center;
       }
+      #jy{
+          animation:myfirst 44s infinite;
+      }
+      #cq{
+          animation:mysecond 44s infinite;
+      }
+      #ys{
+          animation:mysecond 44s infinite;
+      }
+      #jt{
+          animation:mysecond 44s infinite;
+      }
+      #dt{
+          animation:mysecond 44s infinite;
+      }  
     </style>
   </head>
   <body>
-    <audio src="wav/jys.mp3" controls="controls" autoplay="autoplay">
+    <audio src="wav/jys.mp3" controls="controls" autoplay="autoplay" loop=""loop>
     </audio>
-    <h1>静夜思</h1>
-    <p>床前明月光,</p>
-    <p>疑是地上霜。</p>
-    <p>举头望明月,</p>
-    <p>低头思故乡。</p>
+    <p id="jy">静夜思</p>
+    <p id="cq">床前明月光,</p>
+    <p id="ys">疑是地上霜。</p>
+    <p id="jt">举头望明月,</p>
+    <p id="dt">低头思故乡。</p>
   </body>
 </html>
